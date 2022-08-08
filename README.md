@@ -17,7 +17,12 @@ You play as a ghost in a big room. Move with WASD or Arrow keys.
 - Increase your score by destroying enemies and bullets.
 
 ### Development difficulties
-Getting the AI to want to take over the world was challenging as the return on investment is low.
+<!-- Getting the AI to want to take over the world was challenging as the return on investment is low. -->
+The hardest part of the game to get working correctly was the Particle Systems, particularly the "blood" effect when that spews dark red circles when an enemy dies.
+This was for a number of reasons:
+- I used the (Legacy) Cascade particle editor to make it. I found the editor incredibly unintuitive, the documentation assumes you know what all the variable names/terms mean already, most online tutorials use a different version (Unreal 4) and don't explain how anything works, and a lot of the time the updates to the particle's Material aren't instantly reflected in the editor's viewport, which often made me think it wasn't working properly. I spent several hours learning how to use the "Velocity/Life" module through trial and error because I wanted the blood particles to slow down over time, but there were no tutorials available for it.
+- A Particle System requires at least one Material. Because I had no starter content, I had to create the Material for blood from scratch. I thought this would be easy since I just wanted a simple opaque circle. I was wrong. This used another completely different editor. I had no experience with shaders, and all the documentation assumes you're an expert at them. Again, the online tutorials were very complex and skipped over basic explanations. Finally, every time I edited the Material, Unreal would freeze for several minutes to compile the shader. To create the circle Material, I basically had to find a tutorial for a complex Material with a circle in it, then dissect it so only the circle was left.
+- This took me a very long time and serves no purpose other than appearance.
 
 ### Most interesting
 The parts of the game that really shine and show off my programming ability
