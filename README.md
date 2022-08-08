@@ -25,7 +25,15 @@ This was for a number of reasons:
 - This took me a very long time and serves no purpose other than appearance.
 
 ### Most interesting
-The parts of the game that really shine and show off my programming ability
+<!-- The parts of the game that really shine and show off my programming ability -->
+I think the most impressive part of the game's programming is how the "anger" mechanic manages so many different systems simultaneously:
+- **The "Anger" Lifecycle.** The Ghost player has 3 states: Angry -> Cooling Down -> Calm (default). While Calm, if space is pressed the Ghost will become Angry. After a second, it starts Cooling Down, then when done it becomes Calm. These states are managed using a system of Timers and booleans.
+- **Changing Flipbook.** When Calm/Cooling Down, the white ghost flipbook is used. When Angry, this is switched to the red ghost flipbook. Regardless of the flipbook, the Ghost's sprite continues its floating/bobbing animation (slowly bobs up and down using a cosine calculation) and faces the direction it is moving in (flips by inverting the relative scale X value).
+- **Changing Movement Speed.** When Angry, movement speed is much higher. This is then reset to the default when Calm/Cooling Down.
+- **Activating the Fire Particle System.** The fire particle system is activated when Angry, but otherwise deactivated.
+- **Animating the Anger Progress Bar at the bottom of the screen.** When Angry, the progress bar turns red and drains with the remaining anger duration. When Cooling Down, it turns white and refills over the cooldown duration. When Calm, it turns orange, indicating that the bar is full and the player can activate Anger form again. This uses a system of Timelines, and requires event dispatching from the Ghost to Level blueprint, then communication with the GameHUD blueprint.
+- **Changing Ghost interactions with Enemies/Bullets.** When Angry, Enemies and Bullets are destroyed when touched. Otherwise, the Ghost is destroyed instead.
+- **Anger is reset when an enemy is killed.** Finally, to make everything 100x more complex, the anger Timer can be RESET at any time by killing an enemy while Angry. This required a lot of Timer and Timeline manipulation to get working correctly.
 
 ### Reflection on Learning
 What was the most important this I learnt in the process.  One way to frame this is to look at things you struggled with and think about how you solved those and if that solution is **transferable** to similar situations.
