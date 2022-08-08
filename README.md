@@ -1,14 +1,20 @@
 # COMP313 Assignment 1 
-## <your name>
+## John Flynn
 
-## Cool Thing Title
+## Ghost of Death (Game)
 
 [Gameplay video](https://www.youtube.com/watch?v=WB6w7ovocpk)
 
 ## Description
 
 ### Main mechanic
-Stuff about the main action in the game
+<!-- Stuff about the main action in the game -->
+You play as a ghost in a big room. Move with WASD or Arrow keys.
+- Over time, the room spawns enemies that walk toward you and shoot bullets at you.
+- In your normal form, you will die if you touch enemies or bullets.
+- If you press Space, you activate your ANGERED form, and move faster and destroy all enemies/bullets you touch.
+- Your angered form only lasts for a second before needing to recharge, but killing an enemy resets the timer. This allows you to chain lots of kills to stay angry for longer.
+- Increase your score by destroying enemies and bullets.
 
 ### Development difficulties
 Getting the AI to want to take over the world was challenging as the return on investment is low.
