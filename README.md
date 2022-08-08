@@ -3,7 +3,7 @@
 
 ## Ghost of Death (Game)
 
-[Gameplay video](https://www.youtube.com/watch?v=WB6w7ovocpk)
+[Gameplay video](https://youtu.be/zwjlGuPKDj4)
 
 ## Description
 
