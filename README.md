@@ -1,11 +1,18 @@
-# COMP313 Assignment 1 
-## John Flynn
+## Ghost of Death
 
-## Ghost of Death (Game)
+<p float="left">
+  <img src="https://github.com/Pieisyum25/ghost-of-death/assets/80517108/4b00c5ad-23ed-44eb-8950-404d9fd10d19.JPG" alt="title screen" width="400"/>
+  <img src="https://github.com/Pieisyum25/ghost-of-death/assets/80517108/424e4b01-8fb7-48f1-beee-9a204b9bb98b.JPG" alt="gameplay calm ghost" width="400"/>
+  <br>
+  <img src="https://github.com/Pieisyum25/ghost-of-death/assets/80517108/4129e222-7acc-4541-843a-6e1a8c37dad0.JPG" alt="gameplay angry ghost" width="400"/>
+  <img src="https://github.com/Pieisyum25/ghost-of-death/assets/80517108/c94a2d31-d8de-43a6-956d-e92577a7189b.JPG" alt="death screen" width="400"/>
+</p>
 
 [Gameplay video](https://youtu.be/zwjlGuPKDj4)
 
 ## Description
+
+A 2D arcade-style game I made in Unreal Engine 5. As the guardian spirit of a desecrated temple, the limitless waves of trespassers will feel your wrath. Get mad. They can't hurt you while you're mad. Consume them with the flames of your hatred, and watch your score rise.
 
 ### Main mechanic
 <!-- Stuff about the main action in the game -->
